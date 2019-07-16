@@ -17,23 +17,24 @@ class AppFixture extends Fixture
 
     const EXPERIENCES = [
         [
-            'label' => 'Technicien support: Stormshield, Lyon',
-            'description' => 'Prise en charge d\'incidents de niveau1 et 2 sur des firewalls Stormshield et Arkoon',
-            'startedAt' => '2017',
-            'endedAt' => '2019',
-        ],
-        [
-            'label' => 'Technicien support: Cegid, Lyon',
-            'description' => 'Support de niveau 1, 2 et 3 d\'une solution d\'encaissement',
-            'startedAt' => '2016',
-            'endedAt' => '2017',
-        ],
-        [
             'label' => 'Wild Code School',
             'description' => 'Formation développeur web et mobile. Mise en place de projets PHP Symfony',
             'startedAt' => '2019',
             'endedAt' => null,
         ],
+        [
+            'label' => 'Stormshield, Lyon',
+            'description' => 'Prise en charge d\'incidents de niveau1 et 2 sur des firewalls Stormshield et Arkoon',
+            'startedAt' => '2017',
+            'endedAt' => '2019',
+        ],
+        [
+            'label' => 'Cegid, Lyon',
+            'description' => 'Support de niveau 1, 2 et 3 d\'une solution d\'encaissement',
+            'startedAt' => '2016',
+            'endedAt' => '2017',
+        ],
+
     ];
 
 

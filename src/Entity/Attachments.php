@@ -26,6 +26,11 @@ class Attachments
      */
     private $path;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $textColor;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -51,6 +56,18 @@ class Attachments
     public function setPath(string $path): self
     {
         $this->path = $path;
+
+        return $this;
+    }
+
+    public function getTextColor(): ?string
+    {
+        return $this->textColor;
+    }
+
+    public function setTextColor(string $textColor): self
+    {
+        $this->textColor = $textColor;
 
         return $this;
     }

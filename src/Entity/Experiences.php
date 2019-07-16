@@ -27,12 +27,12 @@ class Experiences
     private $description;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="string", length=255)
      */
     private $startedAt;
 
     /**
-     * @ORM\Column(type="datetime", nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $endedAt;
 
@@ -70,24 +70,24 @@ class Experiences
         return $this;
     }
 
-    public function getStartedAt(): ?\DateTimeInterface
+    public function getStartedAt(): ?string
     {
         return $this->startedAt;
     }
 
-    public function setStartedAt(\DateTimeInterface $startedAt): self
+    public function setStartedAt(string $startedAt): self
     {
         $this->startedAt = $startedAt;
 
         return $this;
     }
 
-    public function getEndedAt(): ?\DateTimeInterface
+    public function getEndedAt(): ?string
     {
         return $this->endedAt;
     }
 
-    public function setEndedAt(?\DateTimeInterface $endedAt): self
+    public function setEndedAt(?string $endedAt): self
     {
         $this->endedAt = $endedAt;
 

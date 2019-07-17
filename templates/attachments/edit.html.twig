@@ -1,0 +1,13 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}Edit Attachments{% endblock %}
+
+{% block body %}
+    <h1>Edit Attachments</h1>
+
+    {{ include('attachments/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('attachments_index') }}">back to list</a>
+
+    {{ include('attachments/_delete_form.html.twig') }}
+{% endblock %}

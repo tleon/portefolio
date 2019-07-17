@@ -1,0 +1,18 @@
+<nav>
+    <div class="nav-wrapper white">
+
+        <img src="{{ asset('assets/img/logo_medium.png') }}" alt="">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="blue-text text-darken-3" href="{{ path('users_index') }}">User</a></li>
+            <li><a class="blue-text text-darken-3" href="{{ path('experiences_index') }}">Experiences</a></li>
+            <li><a class="blue-text text-darken-3" href="{{ path('tools_index') }}">Skills</a></li>
+            <li><a class="blue-text text-darken-3" href="{{ path('projects_index') }}">Projects</a></li>
+            <li><a class="blue-text text-darken-3" href="{{ path('attachments_index') }}">Attachments</a></li>
+            <li>
+                <a class="blue-text text-darken-3" href="{{ path('app_logout') }}">
+                    <i class="material-icons blue-text text-darken-3">power_settings_new</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

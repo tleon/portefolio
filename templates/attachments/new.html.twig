@@ -1,0 +1,11 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}New Attachments{% endblock %}
+
+{% block body %}
+    <h1>Create new Attachments</h1>
+
+    {{ include('attachments/_form.html.twig') }}
+
+    <a href="{{ path('attachments_index') }}">back to list</a>
+{% endblock %}

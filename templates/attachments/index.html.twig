@@ -1,0 +1,39 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}Attachments index{% endblock %}
+
+{% block body %}
+    <h1>Attachments index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Label</th>
+                <th>Path</th>
+                <th>TextColor</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for attachment in attachments %}
+            <tr>
+                <td>{{ attachment.id }}</td>
+                <td>{{ attachment.label }}</td>
+                <td>{{ attachment.path }}</td>
+                <td>{{ attachment.textColor }}</td>
+                <td>
+                    <a href="{{ path('attachments_show', {'id': attachment.id}) }}">show</a>
+                    <a href="{{ path('attachments_edit', {'id': attachment.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('attachments_new') }}">Create new</a>
+{% endblock %}

@@ -8,7 +8,9 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {% include '_navbar.html.twig' %}
+        {% block nav %}
+            {% include '_navbar.html.twig' %}
+        {% endblock %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
         {{ encore_entry_script_tags('app') }}

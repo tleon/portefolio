@@ -69,20 +69,21 @@ class AppFixture extends Fixture
     ];
 
     const TOOLS = [
-        ['label' => 'HTML', 'color' => 'red', 'mastery' => 92],
-        ['label' => 'CSS', 'color' => 'green', 'mastery' => 90],
-        ['label' => 'PHP', 'color' => 'purple', 'mastery' => 96],
-        ['label' => 'Symphony', 'color' => 'black', 'mastery' => 95],
-        ['label' => 'Python', 'color' => 'orange', 'mastery' => 80],
+
+        ['label' => 'PHP', 'color' => 'red', 'mastery' => 96],
+        ['label' => 'Symphony', 'color' => 'red', 'mastery' => 95],
+        ['label' => 'Python', 'color' => 'red', 'mastery' => 80],
+        ['label' => 'Java', 'color' => 'red', 'mastery' => 70],
+        ['label' => 'HTML', 'color' => 'yellow', 'mastery' => 92],
+        ['label' => 'CSS', 'color' => 'yellow', 'mastery' => 90],
         ['label' => 'Javascript', 'color' => 'yellow', 'mastery' => 85],
-        ['label' => 'React', 'color' => 'red', 'mastery' => 75],
-        ['label' => 'VueJs', 'color' => 'green', 'mastery' => 76],
-        ['label' => 'Java', 'color' => 'yellow', 'mastery' => 70],
-        ['label' => 'TCP/IP', 'color' => 'black', 'mastery' => 90],
-        ['label' => 'Firewall', 'color' => 'purple', 'mastery' => 92],
-        ['label' => 'Linux', 'color' => 'orange', 'mastery' => 94],
+        ['label' => 'React', 'color' => 'yellow', 'mastery' => 75],
+        ['label' => 'VueJs', 'color' => 'yellow', 'mastery' => 76],
+        ['label' => 'TCP/IP', 'color' => 'blue', 'mastery' => 90],
+        ['label' => 'Firewall', 'color' => 'blue', 'mastery' => 92],
+        ['label' => 'Linux', 'color' => 'blue', 'mastery' => 94],
         ['label' => 'Windows', 'color' => 'blue', 'mastery' => 87],
-        ['label' => 'BSD', 'color' => 'red', 'mastery' => 92]
+        ['label' => 'BSD', 'color' => 'blue', 'mastery' => 92]
     ];
 
     const PROJECTS = [

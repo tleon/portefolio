@@ -3,6 +3,18 @@
 {% block title %}{{ user.username | replace({".": " "}) | title}} 's portefolio{% endblock %}
 
 {% block body %}
+    <div class="row valign-wrapper">
+        <div class="col s12">
+            <h4 class="center-align">Administration Create, Edit, Delete</h4>
+        </div>
+    </div>
+    <div class="row valign-wrapper projects">
+        <div class="col s6"><a href="{{ path('users_index') }}" class="btn-large">Users</a></div>
+        <div class="col s6"><a href="{{ path('experiences_index') }}" class="btn-large">Experiences</a></div>
+        <div class="col s6"><a href="{{ path('tools_index') }}" class="btn-large">Tools</a></div>
+        <div class="col s6"><a href="{{ path('projects_index') }}" class="btn-large">Projects</a></div>
+        <div class="col s6"><a href="{{ path('attachments_index') }}" class="btn-large">Attachments</a></div>
+    </div>
 
 {% endblock %}
 

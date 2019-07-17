@@ -1,15 +1,19 @@
-<div class="myDivider2"></div>
 <div class="row">
 <div class="myDivider"></div>
     <div class="col s12">
         <h4 class="center-align">My Skills</h4>
     </div>
 </div>
-{% for skill in  skills %}
-    {{ skill.label }}
-    <div class="progress" style="height: 10px;">
-        <div class="determinate {{ skill.color }}" style="width: {{ skill.mastery }}%;"></div>
-    </div>
+<div class="row">
+
+    {% for skill in  skills %}
+        <div class="col s3">
+            {{ skill.label }}
+            <div class="progress" style="height: 10px;">
+                <div class="determinate {{ skill.color }}" style="width: {{ skill.mastery }}%;"></div>
+            </div>
+        </div>
 {% endfor %}
+</div>
 <div class="myDivider"></div>
 

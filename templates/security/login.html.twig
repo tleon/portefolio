@@ -7,7 +7,6 @@
 
 {% block body %}
     <div class="container">
-    <div class="myDivider"></div>
         <form method="post">
             {% if error %}
                 <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -37,6 +36,8 @@
                     Log in
                 </button>
         </form>
+
+        <a href="{{ path('home') }}" class="btn" id="homeBtn" >Home</a>
     </div>
 
 {% endblock %}

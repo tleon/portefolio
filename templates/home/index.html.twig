@@ -15,60 +15,19 @@
     </div>
     <div class="myDivider"></div>
     <div class="container" id="myProjects">
-        <div class="row">
-            <div class="col s12">
-                <h4 class="center-align">My Projects</h4>
-            </div>
-        </div>
-        <div class="myDivider"></div>
-        <div class="row projects">
-            {% for item in user.projects %}
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="responsive-img" src="{{ item.attachment.path }}">
-                            {% if item.attachment.textColor == 'dark' %}
-                                <span class="card-title blue-text text-darken-3">{{ item.title }}</span>
-                            {% else %}
-                                <span class="card-title amber-text text-lighten-4">{{ item.title }}</span>
-                            {% endif %}
-                            <a class="btn-floating halfway-fab waves-effect waves-light blue darken-3" href="{{ item.link }}">
-                                <i class="material-icons amber-text text-lighten-4">code</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            {% for tool in item.tools %}
-                                <span class="badge">{{ tool.label }}</span>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
+        {{ include('home/projects.html.twig') }}
     </div>
     <div class="myDivider"></div>
     <div class="container" id="myExperiences">
-        <div class="row">
-            <div class="col s12">
-                <h4 class="center-align">My Experiences</h4>
-            </div>
-        </div>
-        <div class="myDivider"></div>
-        <div class="timeline">
-            {% for exp in user.experiences %}
-            <div class="timeline-event">
-                <div class="card timeline-content">
-                    <div class="card-content">
-                        <span class="card-title blue-text text-darken-3">{{ exp.label }} </span>
-                        <p>{{ exp.description }} <i class=" right">{{ exp.startedAt }} - {{ exp.endedAt ?? "Today"}}</i></p>
-                    </div>
-                </div>
-                <div class="timeline-badge blue darken-3 amber-text text-lighten-4"></div>
-            </div>
-            {% endfor %}
-        </div>
+       {{ include('home/experiences.html.twig') }}
     </div>
     <div class="myDivider"></div>
+    <div class="container" id="mySkills">
+        {{ include('home/skills.html.twig') }}
+    </div>
+    <div class="container bg-img" id="myContact">
+        {{ include('home/contact.html.twig') }}
+    </div>
 
 
 {% endblock %}

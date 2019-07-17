@@ -28,6 +28,16 @@ class Tools
      */
     private $projects;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $color;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $mastery;
+
     public function __construct()
     {
         $this->projects = new ArrayCollection();
@@ -72,6 +82,30 @@ class Tools
         if ($this->projects->contains($project)) {
             $this->projects->removeElement($project);
         }
+
+        return $this;
+    }
+
+    public function getColor(): ?string
+    {
+        return $this->color;
+    }
+
+    public function setColor(string $color): self
+    {
+        $this->color = $color;
+
+        return $this;
+    }
+
+    public function getMastery(): ?int
+    {
+        return $this->mastery;
+    }
+
+    public function setMastery(int $mastery): self
+    {
+        $this->mastery = $mastery;
 
         return $this;
     }

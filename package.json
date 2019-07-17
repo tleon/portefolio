@@ -6,6 +6,7 @@
     "webpack-notifier": "^1.6.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "jquery": "^3.4.1",
     "materialize-css": "^1.0.0-rc.2"
   }

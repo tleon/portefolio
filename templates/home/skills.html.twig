@@ -9,7 +9,7 @@
     {% for skill in  skills %}
         <div class="col s3">
             {{ skill.label }}
-            <div class="progress" style="height: 10px;">
+            <div class="progress" style="height: 10px;" data-aos="zoom-in-right" data-aos-easing="ease-in-out" data-aos-once="true">
                 <div class="determinate {{ skill.color }}" style="width: {{ skill.mastery }}%;"></div>
             </div>
         </div>

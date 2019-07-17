@@ -13,3 +13,8 @@ require('../css/app.scss');
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 require('../../node_modules/materialize-css/dist/js/materialize');
 
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init();

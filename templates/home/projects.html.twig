@@ -10,9 +10,11 @@
             <div class="card-image">
                 <img class="responsive-img" src="{{ item.attachment.path }}">
                 {% if item.attachment.textColor == 'dark' %}
-                <span class="card-title blue-text text-darken-3">{{ item.title }}</span>
+                <span class="card-title blue-text text-darken-3"
+                      data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-once="true">{{ item.title }}</span>
                 {% else %}
-                <span class="card-title amber-text text-lighten-4">{{ item.title }}</span>
+                <span class="card-title amber-text text-lighten-4"
+                      data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-once="true">{{ item.title }}</span>
                 {% endif %}
                 <a class="btn-floating halfway-fab waves-effect waves-light blue darken-3" href="{{ item.link }}">
                     <i class="material-icons amber-text text-lighten-4">code</i>

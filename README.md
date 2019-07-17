@@ -3,30 +3,30 @@
 ### Installation Steps
 - First download the project
 
-> git clone https://github.com/tleon/portefolio.git
-
+ `git clone https://github.com/tleon/portefolio.git`
+ 
 - Then install the dependencies
 
-> cd portefolio
+ `cd portefolio`
 
-> composer intall
+ `composer intall`
 
-> yarn install
+ `yarn install`
 
-> yarn encore dev
+ `yarn encore dev`
 
 - Configure your .env.local with the database information
 
 - install and populate the database
 
-> bin/console d:d:c
+` bin/console d:d:c `
 
-> bin/console d:m:m
+` bin/console d:m:m `
 
-> bin/console d:f:l --no-interaction
+ `bin/console d:f:l --no-interaction`
 
 - You can then run the symfony devlopment web server or your own stack
 
-> bin/console s:r
+ `bin/console s:r`
 
 

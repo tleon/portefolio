@@ -36,6 +36,7 @@ class ExperiencesController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
+            $experience->setUser($this->getUser());
             $entityManager->persist($experience);
             $entityManager->flush();
 

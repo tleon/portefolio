@@ -15,7 +15,6 @@ class ToolsType extends AbstractType
             ->add('label')
             ->add('color')
             ->add('mastery')
-            ->add('projects')
         ;
     }
 

@@ -19,7 +19,6 @@ class UsersType extends AbstractType
             ->add('specialty')
             ->add('phone')
             ->add('githubLink')
-            ->add('roles')
         ;
     }
 

@@ -36,6 +36,7 @@ class ProjectsController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
+            $project->setUser($this->getUser());
             $entityManager->persist($project);
             $entityManager->flush();
 
